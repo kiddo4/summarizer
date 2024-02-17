@@ -24,7 +24,7 @@ class HomeScreenHeaderWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '!',
+                'Check and summarize it!',
                 style: GoogleFonts.openSans().copyWith(
                   fontWeight: FontWeight.w700,
                   fontSize: 16,
@@ -38,8 +38,8 @@ class HomeScreenHeaderWidget extends StatelessWidget {
                 DateFormat("MMM d, yyyy").format(
                   DateTime.now(),
                 ),
-                style: GoogleFonts.openSans().copyWith(
-                  fontWeight: FontWeight.w400,
+                style: GoogleFonts.inter(
+                  fontWeight: FontWeight.w600,
                   fontSize: 12,
                   color: const Color(0xFF19202D),
                 ),
