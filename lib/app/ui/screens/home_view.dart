@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:summarizer/app/ui/widgets/home_screen_header_widget.dart';
+import 'package:summarizer/app/ui/widgets/text_field_widget.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -9,21 +10,25 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  final textController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            HomeScreenHeaderWidget(),
-            Expanded(
+            const HomeScreenHeaderWidget(),
+            const Expanded(
               child: SizedBox(
                 height: 20,
               ),
             ),
+            TextFieldWidget(
+              textController: textController,
+            )
           ],
         )
         )

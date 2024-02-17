@@ -1,13 +1,12 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
-class TextFieldWidget extends StatefulWidget {
-  const TextFieldWidget({super.key});
+class TextFieldWidget extends StatelessWidget {
+  final TextEditingController? textController;
+  const TextFieldWidget({
+    super.key,
+    this.textController,
+    });
 
-  @override
-  State<TextFieldWidget> createState() => _TextFieldWidgetState();
-}
-
-class _TextFieldWidgetState extends State<TextFieldWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +14,23 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
       height: 60.0,
       child: Row(
         children: [
-          
+         SingleChildScrollView(
+              child: TextField(
+                controller: textController,
+                style: const TextStyle(color: Colors.black),
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  filled: true,
+                  fillColor: Colors.blue,
+                  hintText: 'paste the text......',
+                  hintStyle: const TextStyle(color: Colors.black),
+                ),
+                minLines: 1, // <-- set minLines to 1 to make it scrollable
+                maxLines: null, // <-- set maxLines to null to remove the maximum line limit
+              ),
+            ),
         ],
       ),
     );
