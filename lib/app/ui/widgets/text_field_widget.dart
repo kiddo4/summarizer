@@ -13,7 +13,11 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       height: 60.0,
-      child: ,
+      child: Row(
+        children: [
+          
+        ],
+      ),
     );
   }
 }
