@@ -1,5 +1,6 @@
-import 'package:flash_briefs/app/ui/screens/splash_screen.dart';
+
 import 'package:flutter/material.dart';
+import 'package:summarizer/app/ui/screens/splach_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -9,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flash Briefs',
+      title: 'Summarizer',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
