@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class TextFieldWidget extends StatelessWidget {
   final TextEditingController? textController;
-  const TextFieldWidget({
+  Function? onPressed;
+  TextFieldWidget({
     super.key,
     this.textController,
+    this.onPressed
     });
 
   @override

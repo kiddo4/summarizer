@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:summarizer/app/ui/widgets/home_screen_header_widget.dart';
 import 'package:summarizer/app/ui/widgets/text_field_widget.dart';
 
@@ -10,7 +11,20 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  final textController = TextEditingController();
+ 
+  static const _apiKey = String.fromEnvironment('API_KEY');
+  final _textController =  TextEditingController();
+
+  void checkSummarize() async {
+      final model = GenerativeModel(model: 'gemini-pro', apiKey: _apiKey);
+
+      final prompt = 'Write a story about a magic backpack: $_textController';
+      final content = [Content.text(prompt)];
+      final response = await model.generateContent(content);
+
+      print(response.text);
+}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +41,7 @@ class _HomeViewState extends State<HomeView> {
               ),
             ),
             TextFieldWidget(
-              textController: textController,
+              textController: _textController,
             )
           ],
         )
