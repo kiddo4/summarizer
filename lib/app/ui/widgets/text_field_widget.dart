@@ -23,7 +23,7 @@ class TextFieldWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   filled: true,
-                  fillColor: Colors.blue,
+                  fillColor: Colors.deepPurple,
                   hintText: 'paste the text......',
                   hintStyle: const TextStyle(color: Colors.black),
                 ),
