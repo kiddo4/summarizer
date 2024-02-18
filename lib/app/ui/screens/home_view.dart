@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:summarizer/app/ui/widgets/error_dialog_widget.dart';
 import 'package:summarizer/app/ui/widgets/home_screen_header_widget.dart';
-import 'package:summarizer/app/ui/widgets/text_field_widget.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
