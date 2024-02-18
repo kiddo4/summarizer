@@ -25,7 +25,7 @@ class HomeScreenHeaderWidget extends StatelessWidget {
             children: [
               Text(
                 'Check and summarize it!',
-                style: GoogleFonts.openSans().copyWith(
+                style: GoogleFonts.inter().copyWith(
                   fontWeight: FontWeight.w700,
                   fontSize: 16,
                   color: const Color(0xFF19202D),
@@ -39,7 +39,7 @@ class HomeScreenHeaderWidget extends StatelessWidget {
                   DateTime.now(),
                 ),
                 style: GoogleFonts.inter(
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w400,
                   fontSize: 12,
                   color: const Color(0xFF19202D),
                 ),
