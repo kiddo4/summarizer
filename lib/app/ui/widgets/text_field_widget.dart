@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 class TextFieldWidget extends StatelessWidget {
   final TextEditingController? textController;
-  Function? onPressed;
+  final Future<void> Function()? onPressed;
+
+  // Add default value for textController and correct parameter order
   TextFieldWidget({
-    super.key,
+    Key? key,
     this.textController,
-    this.onPressed
-    });
+    this.onPressed,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,9 @@ class TextFieldWidget extends StatelessWidget {
       height: 60.0,
       child: Row(
         children: [
-         SingleChildScrollView(
+          // Wrap the TextField in an Expanded widget to occupy remaining space
+          Expanded(
+            child: SingleChildScrollView(
               child: TextField(
                 controller: textController,
                 style: const TextStyle(color: Colors.black),
@@ -26,13 +30,19 @@ class TextFieldWidget extends StatelessWidget {
                   ),
                   filled: true,
                   fillColor: Colors.deepPurple,
-                  hintText: 'paste the text......',
+                  hintText: 'Paste the text...',
                   hintStyle: const TextStyle(color: Colors.black),
                 ),
-                minLines: 1, // <-- set minLines to 1 to make it scrollable
-                maxLines: null, // <-- set maxLines to null to remove the maximum line limit
+                minLines: 1,
+                maxLines: null,
               ),
             ),
+          ),
+          // Correctly handle onPressed function by adding null check
+          IconButton(
+            onPressed: onPressed != null ? () => onPressed!() : null,
+            icon: Icon(Icons.send_and_archive_rounded),
+          )
         ],
       ),
     );
