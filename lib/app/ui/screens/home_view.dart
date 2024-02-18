@@ -90,7 +90,7 @@ class _HomeViewState extends State<HomeView> {
                     decoration: textFieldDecoration,
                     controller: _textController,
                     onSubmitted: (String value) {
-                      (value);
+                      _checkSummarize(value);
                     },
                   ),
                 ),
@@ -103,7 +103,7 @@ class _HomeViewState extends State<HomeView> {
                       _checkSummarize(_textController.text);
                     },
                     icon: Icon(
-                      Icons.send,
+                      Icons.send_rounded,
                       color: Theme.of(context).colorScheme.primary,
                     ),
                   )
