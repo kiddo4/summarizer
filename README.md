@@ -1,16 +1,75 @@
-# summarizer
+## Summarizer
 
-A new Flutter project.
+Summarizer is a cutting-edge application powered by Google's Generative AI (Gemini), aimed at providing precise and succinct summaries of extensive textual content. It revolutionizes the consumption of digital information by enhancing productivity and facilitating efficient absorption of knowledge.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Key Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Advanced AI Summaries**: Leveraging state-of-the-art Google Generative AI, Summarizer generates accurate summaries.
+- **Intuitive Interface**: With a clean and user-friendly design, navigating and using Summarizer is effortless.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Getting Started
+
+#### API Keys
+
+To utilize Summarizer, you'll need a Gemini API key. If you don't have one yet, create it in Google AI Studio: [Google AI Studio API Key](https://makersuite.google.com/app/apikey).
+
+
+#### Prerequisites
+
+- Ensure Flutter is installed on your system. If not, follow the instructions [here](https://flutter.dev/docs/get-started/install).
+- An active internet connection is necessary for accessing Google's Generative AI APIs.
+
+#### Installation Steps
+
+1. **Clone the Repository**
+
+   Start by cloning the Summarizer repository to your local machine using Git.
+
+   ```bash
+   git clone https://github.com/kiddo4/summarizer.git
+   cd summarizer
+   ```
+
+2. **Install Dependencies**
+
+   Move to the project directory and execute the following command to install required Flutter dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the App**
+
+   Ensure you have an emulator running or a device connected to your computer. Verify connected devices using:
+
+   ```bash
+   flutter devices
+   ```
+
+   Then, run the app with the following command:
+
+   ```bash
+   flutter run --dart-define=newsAPIKey=NEWS_API_KEY --dart-define=geminiAPIKey=GEMINI_API_KEY
+   ```
+
+### How to Use
+
+Provide specific instructions on navigating the app, any login procedures, or key features usage.
+
+### Contribution Guidelines
+
+We encourage contributions to enhance Summarizer. Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+### License
+
+Summarizer is licensed under the MIT License. Refer to the [LICENSE](LICENSE) file for more information.
