@@ -2,7 +2,8 @@
 
 Summarizer is a cutting-edge application powered by Google's Generative AI (Gemini), aimed at providing precise and succinct summaries of extensive textual content. It revolutionizes the consumption of digital information by enhancing productivity and facilitating efficient absorption of knowledge.
 
-![Screenshot_20240220_102513](https://github.com/kiddo4/summarizer/assets/107349861/48b07c87-6d4c-4698-9fa2-57f6f7b90a0d) ![Screenshot_20240220_102544](https://github.com/kiddo4/summarizer/assets/107349861/c8a1be8f-ca37-4f80-96ea-d7dd00775d90)
+ ![Screenshot_20240220_102544](https://github.com/kiddo4/summarizer/assets/107349861/c8a1be8f-ca37-4f80-96ea-d7dd00775d90)
+ ![Screenshot_20240220_102553](https://github.com/kiddo4/summarizer/assets/107349861/bb990bb0-5212-4d78-b345-207c15312523)
 
 ### Key Features
 
